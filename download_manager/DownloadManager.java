@@ -125,6 +125,7 @@ clear= new JButton("clear");
 
 	}
 	private URL varifyUrl(String url){
+		url=url.trim();
 		if(!(url.toLowerCase().startsWith("http://")||url.toLowerCase().startsWith("https://")))
 		{
 				JOptionPane.showMessageDialog(this,"error in starting\n","Error",JOptionPane.ERROR_MESSAGE);
